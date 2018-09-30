@@ -18,10 +18,10 @@ CREATE TABLE VEHICULOS
 (
 ID INTEGER NOT NULL,
 TIPO_VEHICULO INTEGER NOT NULL,
-TARJETA_PROPIEDAD NUMBER (12,0) NOT NULL,
+TARJETA_PROPIEDAD NUMBER (38,0) NOT NULL,
 MODELO VARCHAR2(50) NOT NULL,
 MARCA VARCHAR2(50) NOT NULL,
-AÃ‘O VARCHAR2(10) NOT NULL,
+AÑO VARCHAR2(10) NOT NULL,
 PLACA VARCHAR2(10) NOT NULL,
 VEHICULO VARCHAR2(50) NOT NULL,
 FECHA_CREACION TIMESTAMP NOT NULL,
@@ -481,3 +481,104 @@ INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,77
 INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,93,'South Georgia and The South Sandwich Islands','Dollar');
 INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,80,'Kiribati','Dollar');
 
+/*INSERT TABLA VEHICULOS*/
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,71,3541166587203250,'Familia','Mazda','Pjhy-9027',1989,'UBER BLACK','2/10/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,6,3554759965238500,'Tracker','Geo','Xlqd-6568',1993,'UBERX','5/12/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,9,5610897820498980000,'Firebird','Pontiac','Gxaa-0112',1997,'UBERX','31/07/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,3,3566055239132400,'43168','Saab','Pvok-9635',2005,'UBER BLACK','23/04/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,38,564182716261433000,'CLK-Class','Mercedes-Benz','Upov-6807',2002,'UBERX','9/11/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,75,374622031729329,'Accord','Honda','Plrv-7761',2009,'UBERX','20/09/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,79,3565674073741900,'Accord','Honda','Achn-4858',1994,'UBERX','3/11/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,80,3559555729395820,'911','Porsche','Wdna-6891',2004,'UBERX','13/07/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,100,5602236222299730,'Outlander','Mitsubishi','Ngop-5640',2008,'UBER BLACK','6/07/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,10,3546677768779890,'Canyon','GMC','Hjtf-0944',2005,'UBER BLACK','7/10/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,8,3560261798653190,'Carens','Kia','Lxfy-6727',2007,'UBER BLACK','13/04/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,34,3560624579070260,'LUV','Chevrolet','Mqza-4595',1979,'UBER BLACK','6/10/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,43,372301447254147,'Yukon XL 1500','GMC','Imjz-3410',2001,'UBERX','18/10/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,55,3580278580292850,'Spectra','Kia','Zaua-1355',2003,'UBER BLACK','5/03/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,62,201550494863690,'Navigator','Lincoln','Zgvn-6651',2012,'UBER BLACK','3/10/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,22,3558652200661010,'Sentra','Nissan','Ddqg-1673',1995,'UBERX','14/03/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,82,67069906294136900,'Aveo','Chevrolet','Kcyv-3589',2005,'UBERX','20/12/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,56,5018485253639930,'300SE','Mercedes-Benz','Apdz-7224',1992,'UBERX','5/12/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,73,201888082591269,'M-Class','Mercedes-Benz','Zulx-3399',2003,'UBER BLACK','29/07/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,22,5602242818325940,'Impala','Chevrolet','Ckhq-4006',2006,'UBER BLACK','9/07/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,90,5610423810917030,'Sorento','Kia','Edjw-0018',2007,'UBERX','8/12/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,57,4917068848657020,'2500','Chevrolet','Eumx-4537',1998,'UBERX','2/05/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,16,3533571298564370,'Ram Van B350','Dodge','Obox-2432',1994,'UBER BLACK','28/03/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,74,56022167205344100,'GTO','Mitsubishi','Zrys-1776',1998,'UBER BLACK','25/10/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,12,4405372453588880,'Murano','Nissan','Ungs-3125',2005,'UBERX','20/02/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,72,5610574549876880000,'Camry Hybrid','Toyota','Phvf-5418',2009,'UBERX','2/04/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,36,5496649621102670,'RAV4','Toyota','Qyup-4142',2008,'UBER BLACK','10/02/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,10,3538144694381000,'Town Car','Lincoln','Eglw-0031',2003,'UBERX','6/01/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,95,5489394267805830,'Lucerne','Buick','Hmqy-6349',2011,'UBER BLACK','20/12/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,55,676799900069164000,'Ram 2500','Dodge','Avbd-4338',2003,'UBER BLACK','23/10/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,95,6391628067097870,'IS','Lexus','Kzzd-2578',2006,'UBER BLACK','23/03/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,66,4915564723554,'LR4','Land Rover','Zurl-6368',2011,'UBER BLACK','27/04/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,86,5408674752818260,'Supra','Toyota','Zdbg-3048',1992,'UBER BLACK','5/05/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,38,4844393436498770,'Ion','Saturn','Srct-9780',2004,'UBERX','7/10/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,18,4175009881725910,'Outback','Subaru','Xeod-3776',2005,'UBERX','7/12/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,73,3579336909621730,'F-Series','Ford','Endw-7739',1985,'UBER BLACK','22/01/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,25,5010128428923880,'Xterra','Nissan','Tjbv-5449',2006,'UBERX','29/11/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,11,3531556278915280,'Cabriolet','Volkswagen','Dhxf-4702',1988,'UBERX','17/08/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,27,5602246374577830,'Town','Chrysler','Tuxp-9625',1994,'UBER BLACK','9/10/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,18,6334565919094780000,'Intrigue','Oldsmobile','Fvoq-6052',1998,'UBER BLACK','26/12/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,27,6759907844983910000,'Spectra','Kia','Yvzd-5622',2005,'UBERX','19/09/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,71,3561583299177040,'Sequoia','Toyota','Tnnt-1824',2004,'UBERX','21/11/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,70,347997454103663,'Silhouette','Oldsmobile','Liwa-9793',1997,'UBERX','16/11/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,89,3584117051567920,'Z3','BMW','Aaem-5171',2000,'UBER BLACK','10/03/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,71,4781986246313,'Quest','Nissan','Jxfb-4089',2009,'UBERX','3/06/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,7,201679760886661,'Optima','Kia','Kezk-1102',2003,'UBER BLACK','5/04/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,95,503860517720936000,'Mazda5','Mazda','Depq-8719',2009,'UBER BLACK','28/07/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,41,5570686694486560,'V40','Volvo','Vlre-6796',2000,'UBER BLACK','3/06/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,64,3528219237137180,'Caliber','Dodge','Kkxx-7398',2009,'UBERX','13/05/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,78,3581249484905390,'Cherokee','Jeep','Tfyp-9906',1999,'UBER BLACK','7/03/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,79,3566935103424850,'Prius Plug-in Hybrid','Toyota','Kjwn-5694',2012,'UBERX','4/02/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,36,5602228710082980,'CL65 AMG','Mercedes-Benz','Coiu-9416',2009,'UBER BLACK','14/04/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,16,3531856078177730,'LS','Lexus','Ttch-6200',2002,'UBERX','20/12/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,9,3542636719337430,'Yukon','GMC','Dwhe-8974',1995,'UBER BLACK','14/06/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,45,374622458713897,'CL-Class','Mercedes-Benz','Zvnr-7183',1999,'UBERX','8/09/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,38,3572430459605270,'RL','Acura','Uuve-5159',2001,'UBER BLACK','20/04/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,54,4041594524829,'Voyager','Plymouth','Ujid-2111',1994,'UBERX','3/12/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,68,30121996715361,'SSR','Chevrolet','Ovlx-3675',2004,'UBER BLACK','6/07/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,16,3530416330776590,'Ridgeline','Honda','Upaj-8888',2006,'UBER BLACK','15/11/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,35,5002359450201540,'Concorde','Chrysler','Fwld-3910',1999,'UBER BLACK','4/04/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,18,502078233882530000,'Mountaineer','Mercury','Irdj-3626',1997,'UBERX','27/05/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,81,3541850025201730,'Envoy','GMC','Zmrm-3337',2005,'UBERX','15/06/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,66,4405819683806460,'Regal','Buick','Bjfc-9877',1996,'UBER BLACK','17/01/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,83,4175000742474530,'B-Series Plus','Mazda','Icox-2593',2004,'UBERX','10/11/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,7,30121552135822,'H3','Hummer','Ywar-8240',2008,'UBER BLACK','14/12/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,30,3579660145355800,'57','Maybach','Jney-8292',2006,'UBERX','2/10/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,78,3543418831292160,'Achieva','Oldsmobile','Dsnq-2015',1997,'UBERX','18/07/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,67,5610927404711110,'S-Type','Jaguar','Exoq-2357',2008,'UBER BLACK','2/01/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,33,3535009836046510,'Rodeo','Isuzu','Kzpd-4184',1996,'UBERX','27/06/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,27,4508812193747870,'Mountaineer','Mercury','Azfd-6754',2005,'UBERX','9/08/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,2,3539351258763430,'Crown Victoria','Ford','Rzto-4563',2008,'UBER BLACK','27/01/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,87,3578000278377030,'Ram 3500','Dodge','Tzsk-1645',1999,'UBER BLACK','14/08/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,50,5602239477492720,'i-Series','Isuzu','Ohyg-8758',2008,'UBER BLACK','21/06/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,39,3540344600925360,'CL','Acura','Szso-1566',1998,'UBERX','29/09/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,100,337941522605418,'Q7','Audi','Emwc-9983',2008,'UBERX','11/01/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,14,56022125983793400,'Eurovan','Volkswagen','Sdaa-5726',1994,'UBER BLACK','31/03/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,30,6331108711414430000,'CL','Acura','Vkcs-8865',1997,'UBERX','22/05/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,41,5540132315883700,'Odyssey','Honda','Gcji-7975',2004,'UBERX','2/03/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,61,3562102452255740,'Yukon XL 1500','GMC','Vjzu-5496',2008,'UBERX','26/01/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,10,5524109927763100,'Reno','Suzuki','Etgt-2023',2008,'UBERX','17/03/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,48,3582135971118170,'Optima','Kia','Xbvm-6314',2012,'UBERX','21/10/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,73,5641825436532090,'Expedition EL','Ford','Fyel-2366',2009,'UBER BLACK','16/03/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,77,67614204913617000,'350Z','Nissan','Lqtv-9084',2004,'UBERX','31/03/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,81,3541766507111620,'Suburban 1500','GMC','Bzom-8649',1998,'UBER BLACK','7/03/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,63,5486209965787730,'SL65 AMG','Mercedes-Benz','Ksdx-9061',2006,'UBER BLACK','22/09/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,57,5602254416650740,'Patriot','Jeep','Xaxs-8718',2011,'UBERX','26/06/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,24,3559338129037290,'Sierra 1500','GMC','Uckb-4621',2009,'UBER BLACK','22/09/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,39,3540854980042080,'CLS-Class','Mercedes-Benz','Vper-6367',2012,'UBER BLACK','9/09/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,15,6331103494548610,'LX','Lexus','Mbha-4179',2010,'UBERX','14/09/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,53,5100148335226080,'Rapide','Aston Martin','Lxst-4394',2010,'UBER BLACK','17/11/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,2,633110510627431000,'Fusion','Ford','Jvqj-2079',2012,'UBERX','5/02/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,42,3558203522822860,'Fox','Volkswagen','Qagp-1316',1992,'UBER BLACK','22/06/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,72,630480227490130000,'Express 3500','Chevrolet','Cpxs-0030',2002,'UBER BLACK','26/03/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,70,3553166986568030,'Carens','Kia','Bvsk-2230',2007,'UBERX','22/05/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,45,56022242233765100,'6 Series','BMW','Kndk-1793',2005,'UBER BLACK','3/10/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,83,4508693298742520,'Regal','Buick','Ilyf-7176',1998,'UBER BLACK','18/03/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,81,3570657070360750,'XL-7','Suzuki','Shab-0327',2001,'UBERX','6/04/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,54,5602215470402380,'Windstar','Ford','Tywh-0795',2003,'UBERX','5/01/2018');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,48,3548683125851290,'Taurus','Ford','Tnlg-0755',2009,'UBERX','19/11/2017');
+INSERT INTO VEHICULOS(ID,tipo_vehiculo,tarjeta_propiedad,modelo,marca,"AÑO",placa,vehiculo,fecha_creacion) VALUES (ID_VEHICULOS.nextval,44,5602225965197840,'1500 Club Coupe','GMC','Rrdn-6162',1998,'UBERX','22/04/2018');
