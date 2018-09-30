@@ -1689,7 +1689,17 @@ INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehic
 INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,76,62,15,45,24,55,'EXITOSO',4.63,'19/01/2018','9/05/2018','46 Lunder Hill','553 Blaine Junction');
 INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,49,62,52,81,78,77,'FINALIZADO',0.50,'22/07/2018','13/06/2018','57 Texas Crossing','343 Hoffman Road');
 
-
+/*INSERT TABLA RECORRIDOS*/
+INSERT INTO RECORRIDOS (ID,servicio_id,ciudad_id,longitud,latitud) VALUES (ID_RECORRIDOS.nextval,5,1,'278428651','-220028763');
+INSERT INTO RECORRIDOS (ID,servicio_id,ciudad_id,longitud,latitud) VALUES (ID_RECORRIDOS.nextval,18,9,'1067181959','-68467723');
+INSERT INTO RECORRIDOS (ID,servicio_id,ciudad_id,longitud,latitud) VALUES (ID_RECORRIDOS.nextval,16,4,'-963598367','425069391');
+INSERT INTO RECORRIDOS (ID,servicio_id,ciudad_id,longitud,latitud) VALUES (ID_RECORRIDOS.nextval,8,3,'139911619','501380318');
+INSERT INTO RECORRIDOS (ID,servicio_id,ciudad_id,longitud,latitud) VALUES (ID_RECORRIDOS.nextval,9,10,'439157627','431971197');
+INSERT INTO RECORRIDOS (ID,servicio_id,ciudad_id,longitud,latitud) VALUES (ID_RECORRIDOS.nextval,7,3,'334271403','349563216');
+INSERT INTO RECORRIDOS (ID,servicio_id,ciudad_id,longitud,latitud) VALUES (ID_RECORRIDOS.nextval,5,5,'-145611573','135699981');
+INSERT INTO RECORRIDOS (ID,servicio_id,ciudad_id,longitud,latitud) VALUES (ID_RECORRIDOS.nextval,12,4,'-727399622','452114093');
+INSERT INTO RECORRIDOS (ID,servicio_id,ciudad_id,longitud,latitud) VALUES (ID_RECORRIDOS.nextval,14,7,'879774328','529376808');
+INSERT INTO RECORRIDOS (ID,servicio_id,ciudad_id,longitud,latitud) VALUES (ID_RECORRIDOS.nextval,20,5,'1112219041','-68857846');
 
 
 
