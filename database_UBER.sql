@@ -1453,10 +1453,10 @@ INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,en
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,74,58,'Tarjeta débito','ACTIVO',54511,'NO');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,3,66,'Efectivo','ACTIVO',145456,'NO');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,66,76,'Tarjeta débito','ACTIVO',80000,'SI');
-INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,12,146,'Tarjeta de crédito','INACTIVO',45800'NO');
-INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,35,189,'Paypal','ACTIVO',185222,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,12,14,'Tarjeta de crédito','INACTIVO',45800,'NO');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,35,18,'Paypal','ACTIVO',185222,'SI');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,85,32,'Tarjeta débito','ACTIVO',255685,'SI');
-INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,1,,'Efectivo','ACTIVO',174222,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,1,34,'Efectivo','ACTIVO',174222,'SI');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,65,45,'Tarjeta débito','INACTIVO',147550,'SI');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,30,70,'Tarjeta de crédito','ACTIVO',174811,'NO');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,95,96,'Efectivo','ACTIVO',15256,'SI');
@@ -1472,7 +1472,7 @@ INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,en
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,5,86,'Efectivo','ACTIVO',30000,'SI');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,150,96,'Codigo promocional','INACTIVO',14000,'SI');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,78,62,'Tarjeta de crédito','ACTIVO',155445,'SI');
-INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,98,147,'Efectivo','ACTIVO',12454,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,98,14,'Efectivo','ACTIVO',12454,'SI');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,350,6,'Paypal','ACTIVO',124222,'SI');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,78,85,'Tarjeta débito','INACTIVO',12225,'SI');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,84,35,'Efectivo','ACTIVO',124545,'NO');
@@ -1483,7 +1483,7 @@ INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,en
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,79,24,'Tarjeta de crédito','INACTIVO',89777,'NO');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,78,16,'Efectivo','ACTIVO',525445,'SI');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,35,57,'Tarjeta débito','ACTIVO',21454,'SI');
-INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,570,98,'Paypal','ACTIVO',454544,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,57,98,'Paypal','ACTIVO',454544,'SI');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,78,35,'Codigo promocional','INACTIVO',52444,'SI');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,69,21,'Tarjeta de crédito','ACTIVO',54544,'SI');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,145,78,'Codigo promocional','ACTIVO',14544,'NO');
@@ -1512,8 +1512,6 @@ INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,en
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,305,50,'Efectivo','INACTIVO',21474,'SI');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,71,4,'Efectivo','ACTIVO',55000,'SI');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,256,5,'Efectivo','ACTIVO',54147,'SI');
-
-
 
 /*INSERT TABLA TARJETA_CREDITO*/
 
