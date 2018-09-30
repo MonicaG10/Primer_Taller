@@ -1700,6 +1700,27 @@ INSERT INTO RECORRIDOS (ID,servicio_id,ciudad_id,longitud,latitud) VALUES (ID_RE
 INSERT INTO RECORRIDOS (ID,servicio_id,ciudad_id,longitud,latitud) VALUES (ID_RECORRIDOS.nextval,12,4,'-727399622','452114093');
 INSERT INTO RECORRIDOS (ID,servicio_id,ciudad_id,longitud,latitud) VALUES (ID_RECORRIDOS.nextval,14,7,'879774328','529376808');
 INSERT INTO RECORRIDOS (ID,servicio_id,ciudad_id,longitud,latitud) VALUES (ID_RECORRIDOS.nextval,20,5,'1112219041','-68857846');
+INSERT INTO RECORRIDOS (ID,servicio_id,ciudad_id,longitud,latitud) VALUES (ID_RECORRIDOS.nextval,5,5,'-144611573','137699981');
 
-
+/*INSERT TABLA DETALLE_FACTURAS*/
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,22,6,97,4,1,'COSTO_IVA',6.49);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,2,1,81,8,2,'PROPINA',5.96);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,33,5,45,7,3,'COSTO_DEDUCCION',9.42);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,48,10,96,10,4,'COSTO_RECARGO',4.39);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,4,13,66,7,5,'COSTO_BASE',3.39);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,42,7,70,1,6,'COSTO_RECARGO',8.71);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,42,20,19,8,7,'COSTO_DEDUCCION',4.82);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,17,13,85,7,8,'COSTO_BASE',9.80);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,37,4,65,5,9,'COSTO_BASE',9.12);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,29,10,60,7,10,'COSTO_DEDUCCION',9.25);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,19,18,98,6,11,'COSTO_RECARGO',5.14);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,4,15,83,1,12,'COSTO_DEDUCCION',4.67);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,20,11,51,2,13,'COSTO_BASE',9.02);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,44,5,85,5,14,'COSTO_DEDUCCION',0.42);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,21,13,51,3,15,'COSTO_IVA',0.24);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,48,18,9,6,16,'COSTO_IVA',8.42);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,39,1,9,2,17,'COSTO_DEDUCCION',3.02);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,37,4,87,7,18,'COSTO_RECARGO',1.09);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,24,6,33,4,19,'COSTO_BASE',1.81);
+INSERT INTO DETALLE_FACTURAS (ID,factura_id,servicio_id,vehiculo_id,recorrido_id,numero_viajes,concepto,valor) VALUES (ID_DETALLE_FACTURAS.nextval,27,7,84,8,20,'COSTO_BASE',9.90);
 
