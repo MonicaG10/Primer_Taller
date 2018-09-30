@@ -1511,6 +1511,42 @@ INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,en
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,305,50,'Efectivo','INACTIVO',21474,'SI');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,71,4,'Efectivo','ACTIVO',55000,'SI');
 INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,256,5,'Efectivo','ACTIVO',54147,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,78,16,'Efectivo','ACTIVO',525445,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,35,57,'Tarjeta débito','ACTIVO',21454,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,57,98,'Paypal','ACTIVO',454544,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,78,35,'Codigo promocional','INACTIVO',52444,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,69,21,'Tarjeta de crédito','ACTIVO',54544,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,145,78,'Codigo promocional','ACTIVO',14544,'NO');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,5,63,'Paypal','ACTIVO',54544,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,475,74,'Efectivo','INACTIVO',545454,'NO');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,386,62,'Tarjeta débito','INACTIVO',23545,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,78,66,'Efectivo','ACTIVO',12455445,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,147,68,'Tarjeta de crédito','ACTIVO',54542,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,59,71,'Efectivo','ACTIVO',54544,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,68,74,'Tarjeta débito','INACTIVO',15444,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,5,10,'Efectivo','ACTIVO',141155,'NO');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,80,79,'Efectivo','ACTIVO',145222,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,56,74,'Tarjeta de crédito','ACTIVO',14500,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,59,35,'Codigo promocional','INACTIVO',45800,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,70,85,'Efectivo','ACTIVO',6500,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,5,74,'Efectivo','ACTIVO',78000,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,50,35,'Efectivo','ACTIVO',10655,'NO');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,78,74,'Efectivo','ACTIVO',124555,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,250,79,'Efectivo','ACTIVO',145891,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,78,71,'Codigo promocional','ACTIVO',35811,'NO');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,56,20,'Efectivo','ACTIVO',155451,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,78,14,'Codigo promocional','INACTIVO',124545,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,9,11,'Efectivo','ACTIVO',44454,'NO');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,350,96,'Efectivo','ACTIVO',545414,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,78,66,'Codigo promocional','ACTIVO',545445,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,305,50,'Efectivo','INACTIVO',21474,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,71,4,'Efectivo','ACTIVO',55000,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,256,5,'Efectivo','ACTIVO',54147,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,71,4,'Efectivo','ACTIVO',55000,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,256,5,'Efectivo','ACTIVO',54147,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,78,16,'Efectivo','ACTIVO',525445,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,35,57,'Tarjeta débito','ACTIVO',21454,'SI');
+INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,envio_factura)VALUES(ID_METODOS_PAGOS.nextval,57,98,'Paypal','ACTIVO',454544,'SI');
 
 /*INSERT TABLA TARJETA_CREDITO*/
 
@@ -1629,6 +1665,29 @@ INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUE
 INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Davivienda',25,7);
 INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',34,63);
 INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',10,2);
+
+/*INSERT TABLA SERVICIOS*/
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,54,61,43,15,33,98,'EXITOSO',3.17,'13/05/2018','14/05/2018','578 Hazelcrest Drive','67707 Village Lane');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,54,61,43,15,33,98,'FINALIZADO',3.17,'13/05/2018','14/05/2018','578 Hazelcrest Drive','67707 Village Lane');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,87,7,14,5,49,97,'CANCELADO',5.97,'22/11/2017','5/05/2018','3 Golf View Pass','87550 Hanson Circle');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,9,40,74,23,15,20,'CANCELADO',1.29,'12/02/2018','1/09/2018','95897 Weeping Birch Junction','9 Utah Road');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,70,58,97,80,2,52,'FINALIZADO',3.63,'16/03/2018','16/07/2018','5076 Melody Crossing','96 Gina Lane');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,94,28,78,87,39,85,'FINALIZADO',6.45,'14/09/2018','3/03/2018','444 Ridge Oak Court','3913 Redwing Street');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,59,83,40,63,50,40,'EXITOSO',6.66,'19/09/2018','28/07/2018','87 Bluestem Crossing','3558 Hermina Trail');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,26,60,88,14,55,41,'FINALIZADO',2.94,'18/01/2018','2/06/2018','536 Gulseth Alley','2 Bayside Center');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,5,43,27,31,62,72,'CANCELADO',7.67,'11/01/2018','6/05/2018','9 Anzinger Avenue','25923 1st Point');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,38,61,9,5,76,59,'FINALIZADO',8.37,'13/10/2017','26/02/2018','9 Hintze Park','88 Kings Drive');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,76,53,47,2,4,37,'CANCELADO',7.43,'10/02/2018','24/12/2017','9421 Sundown Pass','13 Weeping Birch Alley');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,72,92,2,30,39,3,'CANCELADO',8.95,'25/11/2017','16/10/2017','9 3rd Trail','11409 Parkside Circle');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,28,28,79,71,78,83,'EXITOSO',0.71,'20/07/2018','28/12/2017','72 Tennyson Hill','5120 Killdeer Lane');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,14,37,49,54,79,58,'FINALIZADO',2.14,'22/08/2018','13/05/2018','0581 Vahlen Plaza','83 Gale Terrace');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,77,74,73,23,36,68,'FINALIZADO',6.94,'18/04/2018','6/06/2018','3643 North Lane','1029 Bunker Hill Trail');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,68,52,40,50,44,55,'EXITOSO',2.86,'3/06/2018','10/12/2017','589 Hermina Point','6 Monica Way');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,23,5,59,45,83,52,'EXITOSO',2.69,'1/04/2018','26/11/2017','9 Fulton Trail','568 Morrow Lane');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,18,2,21,89,19,83,'FINALIZADO',5.84,'31/10/2017','15/05/2018','645 Dovetail Place','59965 Sheridan Hill');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,43,73,10,82,59,62,'FINALIZADO',8.78,'30/06/2018','23/10/2017','75 South Road','5 Twin Pines Parkway');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,76,62,15,45,24,55,'EXITOSO',4.63,'19/01/2018','9/05/2018','46 Lunder Hill','553 Blaine Junction');
+INSERT INTO SERVICIOS (ID,cliente_id,empresa_id,conductor_id,metodopago_id,vehiculo_id,ciudad_id,estado,costo_servicio,fecha_inicio_recorrido,fecha_fin_recorrido,direccion_origen,direccion_destino) VALUES (ID_SERVICIOS.nextval,49,62,52,81,78,77,'FINALIZADO',0.50,'22/07/2018','13/06/2018','57 Texas Crossing','343 Hoffman Road');
 
 
 
