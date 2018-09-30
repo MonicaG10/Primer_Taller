@@ -44,7 +44,7 @@ FECHA_CREACION TIMESTAMP NOT NULL,
 CONSTRAINT CLIENTES_PK PRIMARY KEY (ID),
 CONSTRAINT FK_PAIS_CLI FOREIGN KEY (PAIS_ID)
 REFERENCES PAISES(ID),
-CONSTRAINT CHK_TIPO_DOCUMENTO CHECK (TIPO_DOCUMENTO IN ('CEDULA DE CIUDADAN√çA','PASAPORTE','CEDULA DE EXTRANJER√çA'))
+CONSTRAINT CHK_TIPO_DOCUMENTO CHECK (TIPO_DOCUMENTO IN ('CEDULA DE CIUDADAN√?A','PASAPORTE','CEDULA DE EXTRANJER√?A'))
 );
 CREATE TABLE CONDUCTORES 
 (
@@ -66,7 +66,7 @@ CONSTRAINT FK_PAIS_CONDUCTOR FOREIGN KEY (PAIS_ID)
 REFERENCES PAISES (ID),
 CONSTRAINT FK_VEHICULO_CONDUCTOR FOREIGN KEY (VEHICULO_ID)
 REFERENCES VEHICULOS(ID),
-CONSTRAINT CHK_TIPO_DOCUMENTO_CONDUCTOR CHECK (TIPO_DOCUMENTO IN ('CEDULA DE CIUDADAN√çA','PASAPORTE','CEDULA DE EXTRANJER√çA '))
+CONSTRAINT CHK_TIPO_DOCUMENTO_CONDUCTOR CHECK (TIPO_DOCUMENTO IN ('CEDULA DE CIUDADAN√?A','PASAPORTE','CEDULA DE EXTRANJER√?A '))
 );
 CREATE TABLE TIPO_VEHICULOS 
 (
@@ -274,3 +274,210 @@ CREATE SEQUENCE ID_PAYPAL INCREMENT BY 1 START WITH 1 MINVALUE 1;
 CREATE SEQUENCE ID_TARJETA_CREDITO INCREMENT BY 1 START WITH 1 MINVALUE 1;
 CREATE SEQUENCE ID_TARJETA_DEBITO INCREMENT BY 1 START WITH 1 MINVALUE 1;
 CREATE SEQUENCE ID_TIPO_VEHICULOS INCREMENT BY 1 START WITH 1 MINVALUE 1;
+
+
+/*INSERT TABLA CIUDADES*/
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Teno');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Sundrie');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Rochester');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Baddeck');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Williams Lake');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Maule');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Zignago');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Kˆnigs Wusterhausen');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'IpÌs');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Merritt');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Potsdam');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Price');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Sint-Niklaas');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Dhuy');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Ostrowiec ?wi?tokrzyski');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Bulzi');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Hawick');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Wanaka');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Heule');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Montebello');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Itter');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Merseburg');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Houston');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Meise');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Gols');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Covington');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Wandsworth');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Hertford');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Uberl‚ndia');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Harlow');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Penco');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Regina');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Osogbo');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Yellowhead County');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Lairg');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Chelmsford');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Smoky Lake');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Vergemoli');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Vegreville');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Calama');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Paradise');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'RodÏ Milici');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Freux');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Filey');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Shimoga');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Kilwinning');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Upplands V‰sby');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Vancouver');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Le Havre');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Newbury');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Libramont-Chevigny');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'BraganÁa');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'…vreux');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Pratovecchio');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Oxford');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Ceppaloni');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Rionero in Vulture');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Tarvisio');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Uddevalla');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Casperia');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Dawson Creek');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Marzabotto');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Haren');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Smithers');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Cuccaro Vetere');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Culemborg');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Abingdon');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Raymond');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'DoÒihue');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Spruce Grove');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Temuco');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Cochrane');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Stekene');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Teruel');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Worms');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Gaithersburg');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Mansfield-et-Pontefract');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Paradise');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Turgutlu');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Noville');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Hollabrunn');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Trois-Rivi?res');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Lincoln');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Savannah');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Wibrin');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Gonars');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Develi');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Sparwood');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Suarlee');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Springfield');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'St. David''s');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Dhuy');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Gˆtzis');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'El Carmen');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Collipulli');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Montignies-Saint-Christophe');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Compiano');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Monghidoro');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Penna San Giovanni');
+INSERT INTO CIUDADES (id,descripcion) VALUES (ID_CIUDADES.nextval,'Hassan');
+
+/*INSERT TABLA PAISES*/
+
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,78,'Solomon Islands','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,43,'Nepal','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,63,'Singapore','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,59,'Latvia','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,76,'Macao','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,52,'Liechtenstein','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,97,'Ghana','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,55,'Burkina Faso','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,93,'South Africa','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,29,'Israel','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,86,'Bonaire, Sint Eustatius and Saba','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,80,'Mauritius','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,82,'Tonga','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,13,'Namibia','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,37,'Saint Lucia','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,81,'British Indian Ocean Territory','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,3,'Moldova','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,63,'Honduras','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,56,'Libya','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,61,'Mauritania','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,67,'Switzerland','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,16,'Brunei','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,30,'Germany','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,51,'Jordan','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,79,'Martinique','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,40,'Liechtenstein','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,90,'Guadeloupe','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,3,'Indonesia','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,76,'Iran','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,22,'Syria','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,97,'Pakistan','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,21,'Western Sahara','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,47,'Gabon','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,98,'Guyana','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,15,'Mayotte','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,87,'Lebanon','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,74,'Singapore','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,62,'Denmark','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,79,'Azerbaijan','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,73,'Saudi Arabia','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,1,'Burundi','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,74,'Gabon','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,89,'Honduras','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,39,'Guatemala','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,13,'Belgium','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,8,'Mali','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,20,'Turkmenistan','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,1,'Montenegro','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,92,'Tunisia','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,42,'Japan','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,15,'Portugal','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,17,'Slovenia','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,84,'Morocco','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,57,'Samoa','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,6,'Austria','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,64,'Germany','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,3,'Guyana','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,15,'Guadeloupe','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,78,'Senegal','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,86,'Turkey','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,62,'Brunei','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,22,'Kuwait','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,43,'Bosnia and Herzegovina','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,25,'Nicaragua','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,29,'Guatemala','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,59,'Korea, South','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,67,'Wallis and Futuna','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,66,'Svalbard and Jan Mayen Islands','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,19,'India','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,75,'Nauru','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,25,'Zambia','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,34,'Bolivia','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,2,'United States Minor Outlying Islands','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,30,'Bonaire, Sint Eustatius and Saba','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,63,'Austria','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,29,'Tonga','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,1,'Chad','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,15,'Paraguay','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,40,'Malaysia','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,41,'Zambia','Euro');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,43,'United States Minor Outlying Islands','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,23,'Korea, South','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,50,'Macedonia','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,72,'Ethiopia','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,26,'Iran','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,45,'Nepal','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,81,'Liberia','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,43,'Somalia','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,71,'Sint Maarten','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,3,'Denmark','Pesos');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,87,'South Africa','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,56,'Somalia','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,81,'Myanmar','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,32,'Australia','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,29,'American Samoa','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,39,'Austria','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,49,'Norfolk Island','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,77,'Seychelles','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,93,'South Georgia and The South Sandwich Islands','Dollar');
+INSERT INTO PAISES(ID,ciudad_id,descripcion,moneda) VALUES (ID_PAISES.nextval,80,'Kiribati','Dollar');
+
