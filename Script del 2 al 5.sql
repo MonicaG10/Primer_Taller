@@ -17,14 +17,10 @@ AUTOEXTEND OFF;
 --c. Bigfile tablespace of 5Gb
 
 CREATE BIGFILE TABLESPACE uber2 DATAFILE
-'C:\uber2.dbf' SIZE 5G
-
-
+'C:\uber2.dbf' SIZE 5G;
 
 --d. Set the undo tablespace to be used in the system
 ALTER SYSTEM SET UNDO_TABLESPACE = UNDO_TBS scope = both;
-
-
 
 --3. Create a DBA user (with the role DBA) and assign it to the tablespace called " uber ", this user has
 --unlimited space on the tablespace (The user should have permission to connect)
@@ -75,20 +71,17 @@ PASSWORD_GRACE_TIME 2;
 --2 of them should have the clerk profile
 --and the remaining the development profile, all the users should be allow to connect to the database.
 
-
 CREATE USER USER1 IDENTIFIED BY USER1
 DEFAULT TABLESPACE  UBER
 PROFILE CLERK;
 
 GRANT CREATE SESSION TO USER1;
 
-
 CREATE USER USER2 IDENTIFIED BY USER2
-DEFAULT TABLESPACE  AVIANCA
+DEFAULT TABLESPACE  UBER
 PROFILE CLERK;
 
 GRANT CREATE SESSION TO USER2;
-
 
 CREATE USER USER3 IDENTIFIED BY USER3
 DEFAULT TABLESPACE  UBER
