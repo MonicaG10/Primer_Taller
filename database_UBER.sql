@@ -1699,7 +1699,7 @@ INSERT INTO CODIGOS_INVITACION(id,cliente_id,codigo,fecha_aplicacion,estado)VALU
 INSERT INTO CODIGOS_INVITACION(id,cliente_id,codigo,fecha_aplicacion,estado)VALUES(ID_CODIGOS_INVITACION.nextval,14,'KemtejZh','04/07/2018','LIBRE');
 INSERT INTO CODIGOS_INVITACION(id,cliente_id,codigo,fecha_aplicacion,estado)VALUES(ID_CODIGOS_INVITACION.nextval,98,'GdxrwxN7','21/02/2017','APLICADO');
 INSERT INTO CODIGOS_INVITACION(id,cliente_id,codigo,fecha_aplicacion,estado)VALUES(ID_CODIGOS_INVITACION.nextval,74,'VbmfzsLw','05/02/2018','LIBRE');
-INSERT INTO CODIGOS_INVITACION(id,cliente_id,codigo,fecha_aplicacion,estado)VALUES(ID_CODIGOS_INVITACION.nextval,20,'KsdpbbKq','05/14/2018','LIBRE');
+INSERT INTO CODIGOS_INVITACION(id,cliente_id,codigo,fecha_aplicacion,estado)VALUES(ID_CODIGOS_INVITACION.nextval,20,'KsdpbbKq','05/11/2018','LIBRE');
 INSERT INTO CODIGOS_INVITACION(id,cliente_id,codigo,fecha_aplicacion,estado)VALUES(ID_CODIGOS_INVITACION.nextval,36,'Jxgrlz47','10/11/2017','LIBRE');
 INSERT INTO CODIGOS_INVITACION(id,cliente_id,codigo,fecha_aplicacion,estado)VALUES(ID_CODIGOS_INVITACION.nextval,74,'Gktzxb5q','03/11/2018','APLICADO');
 INSERT INTO CODIGOS_INVITACION(id,cliente_id,codigo,fecha_aplicacion,estado)VALUES(ID_CODIGOS_INVITACION.nextval,95,'Vtnoak9c','06/08/2018','LIBRE');
