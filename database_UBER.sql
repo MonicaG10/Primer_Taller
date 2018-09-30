@@ -235,7 +235,6 @@ REFERENCES DETALLE_FACTURAS(ID)
 CREATE TABLE TARJETA_DEBITO
 (
 ID INTEGER NOT NULL,
-DESCRIPCION VARCHAR2(50) NOT NULL,
 ENTIDAD_BANCARIA VARCHAR2(50) NOT NULL,
 CLIENTE_ID INTEGER NOT NULL,
 METODOS_PAGOS_ID INTEGER NOT NULL,
@@ -1515,53 +1514,123 @@ INSERT INTO METODOS_PAGOS(id,cliente_id,empresa_id,metodos_pagos,estado,valor,en
 
 /*INSERT TABLA TARJETA_CREDITO*/
 
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','3575762478787637',07/03/2025,'0752',1);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','670617595808997468',30/06/2024,'8186',2);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'visa-electron','3578408099406846',07/03/2025,'3454',3);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','4913594489325225',07/03/2025,'5389',4);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'americanexpress','201733555311219',07/03/2025,'9938',5);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'maestro','5350609568294394',07/03/2025,'6481',6);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'visa-electron','3563789615881019',15/01/2025,'6944',1);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','5602245799529674',07/03/2025,'5675',2);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','4508100955875627',4/11/2024,'9936',2);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'mastercard','3544639872868361',07/03/2025,'6948',3);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','3557015847612917',30/06/2024,'6947',4);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','3580596313438805',07/03/2025,'6950',5);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'maestro','4175005595769118',25/12/2023,'5554',6);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','5100149561288765',07/03/2025,'9936',7);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','5100132499287208',2/09/2024,'2850',8);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'visa-electron','5020911289419011978',07/03/2025,'8544',9);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','5434793241169296',07/03/2025,'3264',10);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','30131657188840',15/01/2025,'3263',2);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'mastercard','6304163011165272154',07/03/2025,'3268',2);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','4041374375392',07/03/2025,'3264',2);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'diners-club-enroute','3550972017682699',07/03/2025,'3266',3);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'mastercard','201550479029168',07/03/2025,'3261',3);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'americanexpress','3534420936387751',4/11/'2024',5,4);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','5100141321868465',07/03/2025,'0815',4);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'visa-electron','3552306132375087',07/03/2025,'84454',5);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','3584818492497295',07/03/2025,'0817',5);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'mastercard','3570105340574848',07/03/2025,'0817',6);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','5353255987852193',30/06/2024,'0814',6);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','201403717056579',07/03/2025,'0811',2);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'visa-electron','4041593385123',25/12/2023,'5869',2);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'mastercard','3572367009851366',07/03/2025,'5870',1);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','6761921651003256',07/03/2025,'5850',1);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'maestro','30260109443253',4/11/2024,'5865',3);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','56100140319647405',07/03/2025,'9936',3);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','4041373960220493',15/01/2025,'9937',3);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'visa-electron','3585178735520828',07/03/2025,'9974',4);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','5476395084298437',07/03/2025,'9938',4);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','56022471779141364',15/01/2025,'9937',5);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'mastercard','5511578764201311',07/03/2025,'81454',5);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','5602252544515906626',25/12/2023,'5451',6);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','371076712034710',07/03/2025,'41454',6);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'visa-electron','30118336308576',07/03/2025,'4114',7);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','201501539525505',07/03/2025,'6944',8);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'americanexpress','5602216081379854',07/03/2025,'6947',7);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','3540217251202736',25/12/2023,'6958',6);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'mastercard','3542226168202927',07/03/2025,'6979',7);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','3587537706469554',07/03/2025,'6969',5);
-INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'diners-club-enroute','5287407582109112',07/03/2025,'6932',5);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','3575762478787637','07/03/2025','0752',1);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','670617595808997468','30/06/2024','8186',2);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'visa-electron','3578408099406846','07/03/2025','3454',3);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','4913594489325225','07/03/2025','5389',4);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'americanexpress','201733555311219','07/03/2025','9938',5);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'maestro','5350609568294394','07/03/2025','6481',6);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'visa-electron','3563789615881019','15/01/2025','6944',1);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','5602245799529674','07/03/2025','5675',2);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','4508100955875627','4/11/2024','9936',2);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'mastercard','3544639872868361','07/03/2025','6948',3);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','3557015847612917','30/06/2024','6947',4);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','3580596313438805','07/03/2025','6950',5);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'maestro','4175005595769118','25/12/2023','5554',6);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','5100149561288765','07/03/2025','9936',7);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','5100132499287208','2/09/2024','2850',8);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'visa-electron','5020911289419011978','07/03/2025','8544',9);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','5434793241169296','07/03/2025','3264',10);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','30131657188840','15/01/2025','3263',2);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'mastercard','6304163011165272154','07/03/2025','3268',2);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','4041374375392','07/03/2025','3264',2);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'diners-club-enroute','3550972017682699','07/03/2025','3266',3);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'mastercard','201550479029168','07/03/2025',3261,3);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'americanexpress','3534420936387751','4/11/2024',5,4);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','5100141321868465','07/03/2025','0815',4);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'visa-electron','3552306132375087','07/03/2025','84454',5);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','3584818492497295','07/03/2025','0817',5);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'mastercard','3570105340574848','07/03/2025','0817',6);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','5353255987852193','30/06/2024','0814',6);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','201403717056579','07/03/2025','0811',2);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'visa-electron','4041593385123','25/12/2023','5869',2);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'mastercard','3572367009851366','07/03/2025','5870',1);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','6761921651003256','07/03/2025','5850',1);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'maestro','30260109443253','4/11/2024','5865',3);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','56100140319647405','07/03/2025','9936',3);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','4041373960220493','15/01/2025','9937',3);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'visa-electron','3585178735520828','07/03/2025','9974',4);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','5476395084298437','07/03/2025','9938',4);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','56022471779141364','15/01/2025','9937',5);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'mastercard','5511578764201311','07/03/2025','81454',5);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','5602252544515906626','25/12/2023','5451',6);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','371076712034710','07/03/2025','41454',6);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'visa-electron','30118336308576','07/03/2025','4114',7);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','201501539525505','07/03/2025','6944',8);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'americanexpress','5602216081379854','07/03/2025','6947',7);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','3540217251202736','25/12/2023','6958',6);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'mastercard','3542226168202927','07/03/2025','6979',7);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'jcb','3587537706469554','07/03/2025','6969',5);
+INSERT INTO TARJETA_CREDITO(id,descripcion,numero_tarjeta,fecha_vencimiento,codigo_seguridad,metodos_pagos_id)VALUES(ID_TARJETA_CREDITO.nextval,'diners-club-enroute','5287407582109112','07/03/2025','6932',5);
+
+/*INSERT TABLA TARJETA_DEBITO*/
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Banco Pichincha',44,64);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Davivienda',45,50);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',50,10);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Banco Pichincha',74,55);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',76,17);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Davivienda',65,5);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',450,14);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',14,30);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Banco Pichincha',21,65);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',63,15);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',40,86);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Davivienda',47,47);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',58,13);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Banco Pichincha',30,7);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',74,41);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',95,26);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Davivienda',74,35);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',68,24);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',95,35);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',145,68);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Davivienda',147,14);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',148,7);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',147,20);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Banco Pichincha',32,11);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',95,32);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',98,33);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',85,52);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Davivienda',47,6);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',41,25);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Banco Pichincha',68,47);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',98,48);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',450,26);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',350,18);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Davivienda',357,14);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',250,36);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',214,35);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Banco Pichincha',352,56);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',471,45);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',147,17);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',351,63);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',170,25);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',356,36);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Davivienda',174,21);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',147,14);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',102,47);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Banco Pichincha',35,10);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',70,20);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Davivienda',36,36);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',14,5);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Banco Pichincha',85,24);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',35,16);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Davivienda',369,2);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',500,1);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',357,36);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Davivienda',24,40);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Davivienda',324,56);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',187,15);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',35,45);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Davivienda',471,41);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',36,30);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Banco Pichincha',354,7);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',54,3);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Davivienda',25,7);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',34,63);
+INSERT INTO TARJETA_DEBITO(id,entidad_bancaria,cliente_id,metodos_pagos_id)VALUES(ID_TARJETA_DEBITO.nextval,'Bancolombia',10,2);
+
+
+
 
 
