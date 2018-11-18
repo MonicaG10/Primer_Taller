@@ -96,3 +96,40 @@ END;
 --Ejecutamos la consulta funcion
 SELECT VALOR_TIEMPO(60,'Medellin') AS Valor FROM DUAL;
 
+CREATE OR REPLACE PROCEDURE CALCULAR_TARIFA (ID_VIAJE NUMBER , VALOR_VIAJE NUMBER)
+IS
+   ESTADO_VIAJE VARCHAR2;
+   TARIFA_KILOMETRO NUMBER;
+   TARIFA_MINUTO NUMBER;
+   DISTANCIA EXCEPTION; -- variable de distancia a la cual se le aplicaria el control de excepciones
+   TIEMPO EXCEPTION; --variable de tiempo a la cual se le aplicaria el control de excepciones
+BEGIN
+  SELECT REPLACE(S.ESTADO,'EXITOSO','REALIZADO') AS ESTADO,
+         C.TARIFA_BASE, S.ID AS SERVICIO, D.VALOR,C.TARIFA_KILOMETRO,C.TARIFA_MINUTO
+   FROM SERVICIOS S 
+        INNER JOIN CIUDADES C ON S.CIUDAD_ID = C.ID
+        INNER JOIN FACTURAS F ON F.SERVICIO_ID =S.ID
+        INNER JOIN (SELECT FACTURA_ID, SUM(VALOR) AS VALOR
+        FROM DETALLE_FACTURAS GROUP BY FACTURA_ID) D ON  D.FACTURA_ID=F.ID
+   WHERE ID_VIAJE=S.ID;
+   IF ESTADO_VIAJE != 'REALIZADO' THEN -- Si el estado del viaje es diferente a REALIZADO, deberá insertar 0 en el valor de la tarifa.
+      VALOR_VIEJE := 0; 
+      RAISE VALOR_VIEJE;
+   ELSE
+      DISTANCIA := VALOR_DISTANCIA(TARIFA_KILOMETRO); -- Invocar la función VALOR_DISTANCIA
+      TIEMPO := FUNCION(TARIFA_MINUTO); -- Invocar la función VALOR_TIEMPO
+      VALOR_VIEJE :=C.TARIFA_BASE +DISTANCIA +TIEMPO + D.VALOR;
+      UPDATE SERVICOS SET COSTO_SERVICIO = VALOR_VIEJE  WHERE ID_VIAJE=S.ID;
+      UPDATE FACTURAS SET VALOR_FACTURA = VALOR_VIEJE WHERE ID_VIAJE=F.SERVICIO_ID;
+   END IF;
+      EXCEPTION
+	    WHEN DISTANCIA THEN
+	    RAISE_APPLICATION_ERROR(-20010,'NO TIENE DISTANCIA CALCULADA');
+        VALOR_VIEJE := 0; -- Si alguna de las funciones levanta una excepción, esta deberá ser controlada y actualizar el
+                                --valor del viaje con 0.
+        WHEN TIEMPO THEN
+	    RAISE_APPLICATION_ERROR(-20011,'NO TIENE TIEMPO CALCULADO');
+        VALOR_VIEJE := 0; --Si alguna de las funciones levanta una excepción, esta deberá ser controlada y actualizar el
+                            --valor del viaje con 0.
+END VALOR_VIEJE;
+
