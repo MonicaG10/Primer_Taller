@@ -1,8 +1,8 @@
-/*1.Crear una vista llamada â€œMEDIOS_PAGO_CLIENTESâ€? que contenga las siguientes columnas:
-CLIENTE_ID, NOMBRE_CLIENTE (Si tiene el nombre y el apellido separados en columnas, deberÃ¡n
-estar unidas en una sola), MEDIO_PAGO_ID, TIPO (TDC, Android, Paypal, Efectivo),
-DETALLES_MEDIO_PAGO, EMPRESARIAL (FALSO o VERDADERO), NOMBRE_EMPRESA (Si la
-columna Empresarial es falso, este campo aparecerÃ¡ Nulo) (0.25)*/
+/*1. Crear una vista llamada “MEDIOS_PAGO_CLIENTES” que contenga las siguientes columnas:          
+CLIENTE_ID, NOMBRE_CLIENTE (Si tiene el nombre y el apellido separados en columnas, deberán             
+estar unidas en una sola), MEDIO_PAGO_ID, TIPO (TDC, Android, Paypal, Efectivo),           
+DETALLES_MEDIO_PAGO, EMPRESARIAL (FALSO o VERDADERO), NOMBRE_EMPRESA 
+(Si la columna Empresarial es falso, este campo aparecerá Nulo) ?(0.25) */
 
 
 CREATE OR REPLACE VIEW MEDIOS_PAGO_CLIENTES AS
@@ -19,11 +19,10 @@ FROM CLIENTES A
 INNER JOIN METODOS_PAGOS B ON A.ID=B.cliente_id ;
 
 
-/*2. Cree una vista que permita listar los viajes de cada cliente ordenados cronolÃ³gicamente. El nombre
-de la vista serÃ¡ â€œVIAJES_CLIENTESâ€?, los campos que tendrÃ¡ son: FECHA_VIAJE,
-NOMBRE_CONDUCTOR, PLACA_VEHICULO, NOMBRE_CLIENTE, VALOR_TOTAL,
-TARIFA_DINAMICA (FALSO O VERDADERO), TIPO_SERVICIO (UberX o UberBlack),
-CIUDAD_VIAJE. (0.25)*/
+/*2. Cree una vista que permita listar los viajes de cada cliente ordenados cronológicamente. El nombre               
+de la vista será “VIAJES_CLIENTES”, los campos que tendrá son: FECHA_VIAJE,           
+NOMBRE_CONDUCTOR, PLACA_VEHICULO, NOMBRE_CLIENTE, VALOR_TOTAL,    
+TARIFA_DINAMICA (FALSO O VERDADERO), TIPO_SERVICIO (UberX o UberBlack),CIUDAD_VIAJE. ?(0.25) */
 
 
 CREATE OR REPLACE VIEW VIAJES_CLIENTES as 
@@ -44,15 +43,16 @@ INNER JOIN DETALLE_FACTURAS G ON E.ID=G.FACTURA_ID
 INNER JOIN CIUDADES H ON A.CIUDAD_ID=H.ID
 ORDER BY FECHA_INICIO_RECORRIDO
 ;
-/*3 Cree y evidencie el plan de ejecución de la vista VIAJES_CLIENTES. Cree al menos un índice donde                 
+/*3. Cree y evidencie el plan de ejecución de la vista VIAJES_CLIENTES. Cree al menos un índice donde                 
 mejore el rendimiento del query y muestre el nuevo plan de ejecución. ?(0.25) 
 */
+
 EXPLAIN PLAN SET STATEMENT_ID = 'EXPLAIN_PLAN_VIAJES_CLIENTES' FOR
 SELECT * FROM VIAJES_CLIENTES;
 SELECT * FROM TABLE(DBMS_XPLAN.DISPLAY); 
 
 
-/*5 Crear una función llamada VALOR_DISTANCIA que reciba la distancia en kilómetros y el nombre de              
+/*5. Crear una función llamada VALOR_DISTANCIA que reciba la distancia en kilómetros y el nombre de              
 la ciudad donde se hizo el servicio. Con esta información deberá buscar el valor por cada kilómetro                 
 dependiendo de la ciudad donde esté ubicado el viaje. Deberá retornar el resultado de multiplicar la               
 distancia recorrida y el valor de cada kilómetro dependiendo de la ciudad. Si la distancia es menor a 0                   
@@ -74,7 +74,7 @@ END;
 --Ejecutamos la consulta funcion
 SELECT VALOR_DISTANCIA(10,'Bogota') AS Valor FROM DUAL;
 
-/*6Crear una función llamada VALOR_TIEMPO que reciba la cantidad de minutos del servicio y el               
+/*6. Crear una función llamada VALOR_TIEMPO que reciba la cantidad de minutos del servicio y el               
 nombre de la ciudad donde se hizo el servicio. Con esta información deberá buscar el valor por cada
 minuto dependiendo de la ciudad donde esté ubicado el viaje. Deberá retornar el resultado de               
 multiplicar la distancia recorrida y el valor de cada minuto dependiendo de la ciudad. Si la cantidad de                  
@@ -96,9 +96,21 @@ END;
 --Ejecutamos la consulta funcion
 SELECT VALOR_TIEMPO(60,'Medellin') AS Valor FROM DUAL;
 
+/*7. Crear un procedimiento almacenado que se llame CALCULAR_TARIFA, deberá recibir el ID del viaje.              
+Para calcular la tarifa se requiere lo siguiente ?(0.5)??: 
+a. Si el estado del viaje es diferente a REALIZADO, deberá insertar 0 en el valor de la tarifa.
+b. Buscar el valor de la tarifa base dependiendo de la ciudad donde se haya hecho el servicio. 
+c. Invocar la función VALOR_DISTANCIA 
+d. Invocar la función VALOR_TIEMPO 
+e. Deberá buscar todos los detalles de cada viaje y sumarlos.  
+f. Sumar la tarifa base más el resultado de la función VALOR_DISTANCIA más el resultado de 
+    la función VALOR_TIEMPO y el resultado de la sumatoria de los detalles del viaje. 
+g. Actualizar el registro del viaje con el resultado obtenido. 
+h. Si alguna de las funciones levanta una excepción, esta deberá ser controlada y actualizar el valor del viaje con 0.*/
+
 CREATE OR REPLACE PROCEDURE CALCULAR_TARIFA (ID_VIAJE NUMBER , VALOR_VIAJE NUMBER)
 IS
-   ESTADO_VIAJE VARCHAR2;
+   ESTADO_VIAJE VARCHAR2(50 BYTE);
    TARIFA_KILOMETRO NUMBER;
    TARIFA_MINUTO NUMBER;
    DISTANCIA EXCEPTION; -- variable de distancia a la cual se le aplicaria el control de excepciones
@@ -113,23 +125,22 @@ BEGIN
         FROM DETALLE_FACTURAS GROUP BY FACTURA_ID) D ON  D.FACTURA_ID=F.ID
    WHERE ID_VIAJE=S.ID;
    IF ESTADO_VIAJE != 'REALIZADO' THEN -- Si el estado del viaje es diferente a REALIZADO, deberá insertar 0 en el valor de la tarifa.
-      VALOR_VIEJE := 0; 
-      RAISE VALOR_VIEJE;
+      VALOR_VIAJE := 0; 
+      RAISE VALOR_VIAJE;
    ELSE
       DISTANCIA := VALOR_DISTANCIA(TARIFA_KILOMETRO); -- Invocar la función VALOR_DISTANCIA
-      TIEMPO := FUNCION(TARIFA_MINUTO); -- Invocar la función VALOR_TIEMPO
-      VALOR_VIEJE :=C.TARIFA_BASE +DISTANCIA +TIEMPO + D.VALOR;
-      UPDATE SERVICOS SET COSTO_SERVICIO = VALOR_VIEJE  WHERE ID_VIAJE=S.ID;
-      UPDATE FACTURAS SET VALOR_FACTURA = VALOR_VIEJE WHERE ID_VIAJE=F.SERVICIO_ID;
+      TIEMPO := VALOR_TIEMPO(TARIFA_MINUTO); -- Invocar la función VALOR_TIEMPO
+      VALOR_VIAJE :=C.TARIFA_BASE +DISTANCIA +TIEMPO + D.VALOR;
+      UPDATE SERVICIOS S SET S.COSTO_SERVICIO = VALOR_VIAJE  WHERE ID_VIAJE=S.ID;
+      UPDATE FACTURAS F SET F.VALOR_FACTURA = VALOR_VIAJE WHERE ID_VIAJE=F.SERVICIO_ID;
    END IF;
       EXCEPTION
 	    WHEN DISTANCIA THEN
 	    RAISE_APPLICATION_ERROR(-20010,'NO TIENE DISTANCIA CALCULADA');
-        VALOR_VIEJE := 0; -- Si alguna de las funciones levanta una excepción, esta deberá ser controlada y actualizar el
+        VALOR_VIAJE := 0; -- Si alguna de las funciones levanta una excepción, esta deberá ser controlada y actualizar el
                                 --valor del viaje con 0.
         WHEN TIEMPO THEN
 	    RAISE_APPLICATION_ERROR(-20011,'NO TIENE TIEMPO CALCULADO');
-        VALOR_VIEJE := 0; --Si alguna de las funciones levanta una excepción, esta deberá ser controlada y actualizar el
+        VALOR_VIAJE := 0; --Si alguna de las funciones levanta una excepción, esta deberá ser controlada y actualizar el
                             --valor del viaje con 0.
-END VALOR_VIEJE;
-
+END;
